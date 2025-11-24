@@ -1,26 +1,24 @@
 #!/usr/bin/env python3
-
 def happy_new_year():
-    # Print numbers 10 down to 1
-    for i in range(10, 0, -1):
-        print(i)
-    # Final message
-    print("Happy New Year!")
-
-
+    # code goes here!
+    n = 10
+    while n > 0:
+        print(n)
+        n -= 1
+    else: print('Happy New Year!')
 def square_integers(int_list):
-    # Return a list of squares
-    return [i * i for i in int_list]
-
+    # code goes here!
+    return [n**2 for n in int_list]
 
 def fizzbuzz():
-    # Loop from 1 to 100
-    for i in range(1, 101):
-        if i % 15 == 0:
-            print("FizzBuzz")
-        elif i % 3 == 0:
-            print("Fizz")
-        elif i % 5 == 0:
-            print("Buzz")
-        else:
-            print(i)
+    # code goes here!
+    n = 1
+    while n < 101:
+        if n % 3 == 0 and n % 5 == 0:
+            print('FizzBuzz')
+        elif n % 3 == 0:
+            print('Fizz')
+        elif n % 5 == 0:
+            print('Buzz')
+        else: print(n)
+        n += 1
